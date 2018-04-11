@@ -1,0 +1,10 @@
+[package]
+name = "rnotify"
+version = "0.1.0"
+authors = ["Pavel Mukhanov <mukhanovpv@gmail.com>"]
+
+[dependencies]
+futures = "0.2.0"
+tokio-core = "0.1.16"
+tokio = "0.1.5"
+
