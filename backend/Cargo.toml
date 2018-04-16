@@ -4,7 +4,11 @@ version = "0.1.0"
 authors = ["Pavel Mukhanov <mukhanovpv@gmail.com>"]
 
 [dependencies]
-futures = "0.2.0"
+futures = "0.1.21"
 tokio-core = "0.1.16"
 tokio = "0.1.5"
+telegram-bot = "0.6"
 
+[[bin]]
+name = "bot"
+path = "bot/mod.rs"
