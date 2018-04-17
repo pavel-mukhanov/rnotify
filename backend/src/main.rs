@@ -16,6 +16,8 @@ use futures::prelude::*;
 use serde_json::Value;
 use std::io::prelude::*;
 use std::fs::File;
+use std::io::BufReader;
+use std::io::prelude::*;
 
 fn main() {
     //   let body = read_test_json().unwrap();
@@ -72,10 +74,18 @@ fn parse_body(body: &[u8]) {
         });
 
         match buy {
-            Some(rate) => println!("rate: {:?}", rate.buy),
+            Some(rate) => {
+                save_rate(rate.buy);
+                println!("rate: {:?}", rate.buy);
+            }
             _ => println!("rate not found"),
         }
     }
+}
+
+fn save_rate(rate: f32) -> Result<(), std::io::Error> {
+    let mut file = File::create("rate.txt")?;
+    file.write_fmt(format_args!("{}", rate))
 }
 
 #[allow(dead_code)]
