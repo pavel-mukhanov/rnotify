@@ -1,0 +1,64 @@
+{
+	"resultCode": "OK",
+	"payload": {
+		"lastUpdate": {
+			"milliseconds": 1523607911355
+		},
+		"rates": [{
+			"category": "DepositClosingBenefit",
+			"fromCurrency": {
+				"name": "USD",
+				"code": 840
+			},
+			"toCurrency": {
+				"name": "RUB",
+				"code": 643
+			},
+			"buy": 60.35
+		}, {
+			"category": "DepositClosingBenefit",
+			"fromCurrency": {
+				"name": "EUR",
+				"code": 978
+			},
+			"toCurrency": {
+				"name": "RUB",
+				"code": 643
+			},
+			"buy": 74.35
+		}, {
+			"category": "DepositClosingBenefit",
+			"fromCurrency": {
+				"name": "GBP",
+				"code": 826
+			},
+			"toCurrency": {
+				"name": "RUB",
+				"code": 643
+			},
+			"buy": 86.0
+		}, {
+			"category": "DepositClosing",
+			"fromCurrency": {
+				"name": "USD",
+				"code": 840
+			},
+			"toCurrency": {
+				"name": "RUB",
+				"code": 643
+			},
+			"buy": 60.35
+		}, {
+			"category": "DebitCardsTransfers",
+			"fromCurrency": {
+				"name": "EUR",
+				"code": 978
+			},
+			"toCurrency": {
+				"name": "RUB",
+				"code": 643
+			},
+			"buy": 74.35
+		}]
+	}
+}
